@@ -1,0 +1,454 @@
+fileFormatVersion: 2
+guid: 4d395b6edcdf351459d97acf174dc3e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1095489194400402684
+    second: kieran2_0
+  - first:
+      213: 3835308366214735457
+    second: kieran2_1
+  - first:
+      213: 2018131271334850116
+    second: kieran2_2
+  - first:
+      213: 1654554625200303219
+    second: kieran2_3
+  - first:
+      213: 1768016266182777736
+    second: kieran2_4
+  - first:
+      213: -4723375165171690118
+    second: kieran2_5
+  - first:
+      213: 2594048959604434531
+    second: kieran2_6
+  - first:
+      213: -8126581503637567454
+    second: kieran2_7
+  - first:
+      213: -7427964772086716471
+    second: kieran2_8
+  - first:
+      213: 7793176381433560254
+    second: kieran2_9
+  - first:
+      213: -2453879557774273903
+    second: kieran2_10
+  - first:
+      213: 6653916257008448930
+    second: kieran2_11
+  - first:
+      213: 4606249912740660024
+    second: kieran2_12
+  - first:
+      213: -5792639911386631862
+    second: kieran2_13
+  - first:
+      213: 4345212437706962051
+    second: kieran2_14
+  - first:
+      213: 2278860142610467807
+    second: kieran2_15
+  - first:
+      213: -6611524236451834000
+    second: kieran2_16
+  - first:
+      213: 8917875140098140821
+    second: kieran2_17
+  - first:
+      213: 4508315256935759741
+    second: kieran2_18
+  - first:
+      213: -1812320249717197554
+    second: kieran2_19
+  - first:
+      213: -369100645730396773
+    second: kieran2_20
+  - first:
+      213: 4290168470428402929
+    second: kieran2_21
+  - first:
+      213: -3026699389046955725
+    second: kieran2_22
+  - first:
+      213: -7330273525980729867
+    second: kieran2_23
+  - first:
+      213: 8133414968399931029
+    second: kieran2_24
+  - first:
+      213: 8919514281985368624
+    second: kieran2_25
+  - first:
+      213: 5115180588536429586
+    second: kieran2_26
+  - first:
+      213: -1827414941472709334
+    second: kieran2_27
+  - first:
+      213: 5394721778108789253
+    second: kieran2_28
+  - first:
+      213: -7207580241162981050
+    second: kieran2_29
+  - first:
+      213: -6707674627916876071
+    second: kieran2_30
+  - first:
+      213: -6344143668522734868
+    second: kieran2_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kieran2_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 100
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcc38f3e95f33f00800000000000000
+      internalID: 1095489194400402684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 98
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166205483a0c93530800000000000000
+      internalID: 3835308366214735457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 98
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e6502e2b7d10c10800000000000000
+      internalID: 2018131271334850116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 68
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c2b885aa826f610800000000000000
+      internalID: 1654554625200303219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 66
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bdfee3d61498810800000000000000
+      internalID: 1768016266182777736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 66
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a751a031053337eb0800000000000000
+      internalID: -4723375165171690118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 36
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366a13fe8c9eff320800000000000000
+      internalID: 2594048959604434531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_7
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 36
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2284c6dcd25983f80800000000000000
+      internalID: -8126581503637567454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 36
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7e7a315619ae890800000000000000
+      internalID: -7427964772086716471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcbf4ff0ace62c60800000000000000
+      internalID: 7793176381433560254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 3
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192954d1b8112fdd0800000000000000
+      internalID: -2453879557774273903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kieran2_11
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a57f20f495775c50800000000000000
+      internalID: 6653916257008448930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
