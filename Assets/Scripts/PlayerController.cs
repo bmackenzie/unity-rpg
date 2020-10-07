@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Entity
 {
     public Rigidbody2D rb2d;
 
@@ -87,5 +87,7 @@ public class PlayerController : MonoBehaviour
             lastMove = new Vector2(0, 0);
         }
 
+        //stop the player from leaving the map, function from entity.cs
+        setClamp(.5f, 1f);
     }
 }

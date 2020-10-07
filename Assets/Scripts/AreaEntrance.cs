@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class AreaEntrance : MonoBehaviour
 {
@@ -14,11 +15,14 @@ public class AreaEntrance : MonoBehaviour
         {
             PlayerController.instance.transform.position = transform.position;
         }
+
+        //PlayerController.instance.theMap = GameObject.Find("Grid").GetComponent<Tilemap>(); 
+           // GameObject.FindWithTag("mainTile");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

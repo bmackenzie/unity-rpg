@@ -9,6 +9,10 @@ public class AreaExit : MonoBehaviour
     public string areaToLoad;
 
     public string areaTransitionName;
+
+    //time before next scene loads, to account for screen transition
+    public float waitToLoad = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
