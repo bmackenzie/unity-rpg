@@ -15,14 +15,25 @@ public class UIFade : MonoBehaviour
 
     public float fadeSpeed;
 
-    public bool shouldFadeToBlack;
+    bool shouldFadeToBlack;
 
-    public bool shouldFadeFromBlack;
+    bool shouldFadeFromBlack;
 
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
+        //Ensures only one instance of the canvas can exist.
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }   
+
+        //makes sure canvas follows us from scene to scene
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

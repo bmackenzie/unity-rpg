@@ -30,9 +30,10 @@ public class PlayerController : Entity
         {
             instance = this;
         }
-        else
+        //checks before deletion that any instance isn't this object
+        else if (instance != this)
         {
-            Destroy(gameObject);
+                Destroy(gameObject);
         }
 
         DontDestroyOnLoad(gameObject);

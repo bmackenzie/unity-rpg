@@ -15,9 +15,8 @@ public class AreaEntrance : MonoBehaviour
         {
             PlayerController.instance.transform.position = transform.position;
         }
-
-        //PlayerController.instance.theMap = GameObject.Find("Grid").GetComponent<Tilemap>(); 
-           // GameObject.FindWithTag("mainTile");
+        //runs fade in when you enter a new scene
+        UIFade.instance.FadeFromBlack();
     }
 
     // Update is called once per frame

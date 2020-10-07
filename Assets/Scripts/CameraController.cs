@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-//if this script is going beyond the bounds of the tilemap, make sure tilemap bounds are compressed, you can do that in the settings for each tilemap
+
 public class CameraController : Entity
 {
     // variable to hold player transform
@@ -18,6 +18,7 @@ public class CameraController : Entity
     void Start()
     {
         target = PlayerController.instance.transform;
+
         //Gets the current height and width of the main camera, which is this one if you only have one camera, aspect is aspect ratio
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;
