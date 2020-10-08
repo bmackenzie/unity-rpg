@@ -22,16 +22,6 @@ public class UIFade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Ensures only one instance of the canvas can exist.
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-        }   
-
         //makes sure canvas follows us from scene to scene
         DontDestroyOnLoad(gameObject);
     }

@@ -13,8 +13,7 @@ public class EssentialsLoader : MonoBehaviour
     {
         if(UIFade.instance == null)
         {
-            UIFade clone = Instantiate(UIScreen).GetComponent<UIFade>();
-            UIFade.instance = clone;
+            UIFade.instance = Instantiate(UIScreen).GetComponent<UIFade>();
         }
 
         if(PlayerController.instance == null)
