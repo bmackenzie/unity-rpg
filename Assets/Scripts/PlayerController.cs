@@ -18,9 +18,13 @@ public class PlayerController : Entity
 
     public string areaTransitionName;
 
+    public bool canMove = true;
+
     Vector2 movement;
 
     Vector2 lastMove;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -54,18 +58,21 @@ public class PlayerController : Entity
         // prevents diagonal movement, needs to be amended so that you keep going in the direction you were going, the reason this doesn't work is because rb2d is staying the same, so lastmove references the position the player has moved to already
         if (movement.x != 0 ^ movement.y != 0)
         {
-            //move the character, set last move direction
-            lastMove = movement;
-            rb2d.MovePosition(rb2d.position + lastMove * moveSpeed * Time.fixedDeltaTime);
-            //choose an animation to play, function
-            if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
+            //move the character, set last move direction, checks if canMove is true to stop movement during dialog and other interactions
+            if (canMove)
+            {
+                lastMove = movement;
+                rb2d.MovePosition(rb2d.position + lastMove * moveSpeed * Time.fixedDeltaTime);
+            }
+            //choose an animation to play, checks canMove to prevent animation changing while movement is locked
+            if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y) && canMove)
             {
                 myAnim.SetFloat("moveX", movement.x);
                 myAnim.SetFloat("moveY", 0f);
                 myAnim.SetFloat("lastMoveX", movement.x);
                 myAnim.SetFloat("lastMoveY", 0f);
             }
-            else if (Mathf.Abs(movement.y) > Mathf.Abs(movement.x))
+            else if (Mathf.Abs(movement.y) > Mathf.Abs(movement.x) && canMove)
             {
                 myAnim.SetFloat("moveY", movement.y);
                 myAnim.SetFloat("moveX", 0f);

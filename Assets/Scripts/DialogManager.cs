@@ -5,7 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
-{
+{ 
+
     //variables to store UI objects
     public Text dialogText;
     public Text nameText;
@@ -48,9 +49,12 @@ public class DialogManager : MonoBehaviour
                     if (currentLine >= dialogLines.Length)
                     {
                         dialogBox.SetActive(false);
+                        PlayerController.instance.canMove = true;
+
                     }
                     else
                     {
+                        checkIfName();
                         dialogText.text = dialogLines[currentLine];
                     }
                 }
@@ -63,17 +67,33 @@ public class DialogManager : MonoBehaviour
         }
     }
     
-    //function to be called by dialogActivatorscript
-    public void showDialog(string[] newLines)
+    //function to be called by dialogActivatorscript, hides namebox if isPerson is false
+    public void showDialog(string[] newLines, bool isPerson)
     {
         dialogLines = newLines;
 
         currentLine = 0;
+
+        checkIfName();
 
         dialogText.text = dialogLines[0];
 
         dialogBox.SetActive(true);
 
         justStarted = true;
+
+        nameBox.SetActive(isPerson);
+
+        PlayerController.instance.canMove = false;
+    }
+
+    //set name function, checks if line includes n-, and sets name if so, replacing the n- with nothing so it doesn't appear in the namebox
+    public void checkIfName()
+    {
+        if(dialogLines[currentLine].StartsWith("n-"))
+        {
+            nameText.text = dialogLines[currentLine].Replace("n-", "");
+            currentLine++;
+        }
     }
 }

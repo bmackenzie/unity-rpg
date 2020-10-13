@@ -6605,7 +6605,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1274862076}
   - component: {fileID: 1274862075}
-  - component: {fileID: 1274862078}
   - component: {fileID: 1274862077}
   - component: {fileID: 1274862079}
   - component: {fileID: 1274862080}
@@ -6707,24 +6706,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.94, y: 3.32}
   m_EdgeRadius: 0
---- !u!114 &1274862078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274862074}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 655565863918c6a4db811714bf53f2bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lines:
-  - 'This '
-  - is
-  - a
-  - test
-  - array
 --- !u!61 &1274862079
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6763,7 +6744,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cba7f0fd2afe814d857d7dc75e4e13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  isPerson: 1
+  lines:
+  - n-shopkeep
+  - H-hey
+  - Wanna buy a...
+  - Funnelcake?
+  - n-Kieran
+  - No thank you
+  - n-shopkeep
+  - BUY ONE!!
 --- !u!1001 &1323705733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6771,13 +6761,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 912732596, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 136
+      objectReference: {fileID: 0}
+    - target: {fileID: 912732596, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -726
+      objectReference: {fileID: 0}
+    - target: {fileID: 912732596, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1463.899
+      objectReference: {fileID: 0}
     - target: {fileID: 1323705736, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
       propertyPath: dialogLines.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1652357986, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4334670559095282281, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
       propertyPath: m_Name
@@ -8277,6 +8279,10 @@ PrefabInstance:
     - target: {fileID: 761959097879578276, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
       propertyPath: theMap
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 761959097879578276, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
+      propertyPath: canMove
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 761959097879578279, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
       propertyPath: m_Name
