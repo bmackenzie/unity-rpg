@@ -6608,6 +6608,7 @@ GameObject:
   - component: {fileID: 1274862078}
   - component: {fileID: 1274862077}
   - component: {fileID: 1274862079}
+  - component: {fileID: 1274862080}
   m_Layer: 0
   m_Name: character_0
   m_TagString: Untagged
@@ -6713,17 +6714,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274862074}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 655565863918c6a4db811714bf53f2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - H-hey
-  - Wanna buy a...
-  - Funnelcake?
-  - ...
-  - BUY ONE!
+  - 'This '
+  - is
+  - a
+  - test
+  - array
 --- !u!61 &1274862079
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6750,6 +6751,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9375, y: 0.79}
   m_EdgeRadius: 0
+--- !u!114 &1274862080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274862074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cba7f0fd2afe814d857d7dc75e4e13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines: []
 --- !u!1001 &1323705733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6757,9 +6771,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1652357987, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 3.902832
+    - target: {fileID: 1323705736, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
+      propertyPath: dialogLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652357986, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4334670559095282281, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
       propertyPath: m_Name

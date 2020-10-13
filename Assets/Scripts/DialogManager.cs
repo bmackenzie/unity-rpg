@@ -12,8 +12,8 @@ public class DialogManager : MonoBehaviour
     public GameObject dialogBox;
     public GameObject nameBox;
 
-    //variable to store dialog by line
-    public string[] dialogLines;
+    //variable to store dialog by line, private as this is set by other objects that call the showDialog function
+    string[] dialogLines;
 
     //variable to store line being displayed
     public int currentLine;
@@ -28,6 +28,8 @@ public class DialogManager : MonoBehaviour
     void Start()
     {
         instance = this;
+        //consider deleting this if there's a better way to do it
+        dialogBox.SetActive(false);
     }
 
     // Update is called once per frame
