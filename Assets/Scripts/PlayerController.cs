@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
 
-public class PlayerController : Character
+public class PlayerController : Entity
 {
     public Rigidbody2D rb2d;
 
@@ -27,7 +27,7 @@ public class PlayerController : Character
 
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         //Ensures only one instance of the player can exist. if you have a player load script, this needs to execute before it or it blows up the player. Also not movement related
         if (instance == null)
@@ -51,10 +51,7 @@ public class PlayerController : Character
         //move input
         movement.x =  Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            AddExp(500);
-        }
+
     }
 
     void FixedUpdate()
