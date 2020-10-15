@@ -76,7 +76,7 @@ public class DialogManager : MonoBehaviour
 
         checkIfName();
 
-        dialogText.text = dialogLines[0];
+        dialogText.text = dialogLines[currentLine];
 
         dialogBox.SetActive(true);
 
