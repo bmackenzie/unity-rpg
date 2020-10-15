@@ -8277,6 +8277,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 761959097879578276, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
+      propertyPath: expToNextLevel.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 761959097879578276, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
       propertyPath: movePoint
       value: 
       objectReference: {fileID: 0}
@@ -8287,6 +8291,22 @@ PrefabInstance:
     - target: {fileID: 761959097879578276, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
       propertyPath: canMove
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 761959097879578276, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
+      propertyPath: charName
+      value: Kieran
+      objectReference: {fileID: 0}
+    - target: {fileID: 761959097879578276, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
+      propertyPath: charImage
+      value: 
+      objectReference: {fileID: 1095489194400402684, guid: 4d395b6edcdf351459d97acf174dc3e5, type: 3}
+    - target: {fileID: 761959097879578276, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 761959097879578276, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
+      propertyPath: currentExp
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 761959097879578279, guid: b2e5e2077df16844b8f2cc9218478766, type: 3}
       propertyPath: m_Name
