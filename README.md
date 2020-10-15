@@ -11,3 +11,7 @@ Tilemap editing
 Camera Controls
 
 Scene Transitions
+
+Basic dialog system
+
+Basic stats and leveling
