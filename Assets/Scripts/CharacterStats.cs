@@ -57,7 +57,7 @@ public class CharacterStats : MonoBehaviour
         if (level < maxLevel)
         {
             //check if we have enough exp to level up
-            if (currentExp > expToNextLevel[level]l)
+            if (currentExp > expToNextLevel[level])
             {
                 //set exp to the difference between the exp we have and how much we need to level
                 currentExp -= expToNextLevel[level];
@@ -77,7 +77,7 @@ public class CharacterStats : MonoBehaviour
                 maxHP = Mathf.FloorToInt(maxHP * 1.05f);
                 currentHP = maxHP;
 
-                maxMP += mpLevelBonus[level];
+                //maxMP += mpLevelBonus[level];
                 currentMP = maxMP;
             }
         }

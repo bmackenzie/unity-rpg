@@ -6818,7 +6818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1652357986, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4334670559095282281, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
       propertyPath: m_Name
@@ -8404,6 +8404,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4080587048745570206, guid: 3602a72e2f25ae540a14ccdee3c55215, type: 3}
+      propertyPath: mpLevelBonus.Array.size
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4080587048892921976, guid: 3602a72e2f25ae540a14ccdee3c55215, type: 3}
       propertyPath: m_Name
       value: Game Manager
