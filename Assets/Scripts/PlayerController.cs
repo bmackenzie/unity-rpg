@@ -26,6 +26,7 @@ public class PlayerController : Entity
 
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +52,6 @@ public class PlayerController : Entity
         //move input
         movement.x =  Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
     }
 
     void FixedUpdate()

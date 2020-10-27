@@ -9,15 +9,6 @@ using UnityEngine.Tilemaps;
 
 public class Entity : MonoBehaviour
 {
-    //variables for dialog activator.  Doesn't do anything if lines are set to 0 in inspector
-    //holds whether or not the entity is a person with a nameplate, false means there will be no nameplate
-    public bool isPerson = true;
-    //holds lines to be displayed by the entity
-    public string[] lines;
-    // check if player is in range of talking
-    bool canActivate;
-
-
     //variables for locking movement past the tilemap bounds, method on line 23
     Tilemap theMap;
     Vector3 bottomLeftLimit;
@@ -40,28 +31,7 @@ public class Entity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //dialog code: calls the function that displays dialog if character is in range, button is released, and there isn't a dialog box on screen,  last part of the check keeps the method from being called repeatedly
-        if (canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy && lines.Length > 0)
-        {
-            DialogManager.instance.showDialog(lines, isPerson);
-        }
-    }
 
-    //Set it so character can interact with the object when in range
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            canActivate = true;
-        }
-    }
-    //Set it so character cannot interact with object once they've left the range
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            canActivate = false;
-        }
     }
 
 }

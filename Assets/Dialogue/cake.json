@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "H-hey\n\nWanna buy a funnel cake?\n\n[[ answer: Yes! |buyCake]]\n[[ answer: No! |dontBuyCake]]",
+		"position": {
+			"x": 760,
+			"y": 533
+		},
+		"colorID": 0
+	},
+	{
+		"title": "buyCake",
+		"tags": "",
+		"body": "God bless you sir",
+		"position": {
+			"x": 1022,
+			"y": 447
+		},
+		"colorID": 0
+	},
+	{
+		"title": "dontBuyCake",
+		"tags": "",
+		"body": "BUY ONE!!!",
+		"position": {
+			"x": 1070,
+			"y": 708
+		},
+		"colorID": 0
+	}
+]
