@@ -8,9 +8,6 @@ public class CharacterStats : MonoBehaviour
     public string charName;
     public int level = 1;
     public int currentExp;
-    public int[] expToNextLevel;
-    public int maxLevel = 100;
-    public int baseExp = 1000;
 
     public int currentHP;
     public int maxHP = 100;
@@ -19,24 +16,36 @@ public class CharacterStats : MonoBehaviour
     public int maxMP = 30;
     //array holding how much mp should go up by each level
     public int[] mpLevelBonus;
+    
+    //Character Stats, derived from skill increases
     public int strength;
-    public int defence;
+    public int dexterity;
+    public int body;
+    public int mind;
+    public int charm;
+
+    //skills
+    Skill oneHanded = new Skill("One Handed", 1, 0);
+    Skill twoHanded = new Skill("Two Handed", 1, 0);
+    Skill finesse = new Skill("Finesse Weapon", 1, 0);
+    Skill fist = new Skill("Fist", 1, 0);
+    Skill bow = new Skill("Bow", 1, 0);
+    Skill magic = new Skill("Magic", 1, 0);
+
+    //equipment
     public int weaponPower;
+    public int weaponMagic;
     public int armorPower;
+    public int armorDodge;
     public string equippedWeapon;
     public string equippedArmor;
+
+
     public Sprite charImage;
     // Start is called before the first frame update
     void Start()
     {
-        //array holding how much exp is needed to level up
-        expToNextLevel = new int[99];
-        expToNextLevel[1] = baseExp;
-        //loop through the array, setting the exp needed for each level so we don't have to do it manually
-        for (int i = 2; i < expToNextLevel.Length; i++)
-        {
-            expToNextLevel[i] = Mathf.FloorToInt(expToNextLevel[i - 1] * 1.05f);
-        }
+
     }
 
     // Update is called once per frame
@@ -45,46 +54,7 @@ public class CharacterStats : MonoBehaviour
         //code used to test exp gain and level up remove when done testing
         if (Input.GetKeyDown(KeyCode.K))
         {
-            AddExp(1000);
-        }
-    }
-
-    //function for adding exp to the character and leveling up
-    public void AddExp(int expToAdd)
-    {
-        currentExp += expToAdd;
-        //check to make sure we aren't max level
-        if (level < maxLevel)
-        {
-            //check if we have enough exp to level up
-            if (currentExp > expToNextLevel[level])
-            {
-                //set exp to the difference between the exp we have and how much we need to level
-                currentExp -= expToNextLevel[level];
-
-                level++;
-
-                //determine what stats should increase (starting with alternating strength and defense)
-                if (level % 2 == 0)
-                {
-                    strength++;
-                }
-                else
-                {
-                    defence++;
-                }
-
-                maxHP = Mathf.FloorToInt(maxHP * 1.05f);
-                currentHP = maxHP;
-
-                //maxMP += mpLevelBonus[level];
-                currentMP = maxMP;
-            }
-        }
-        //make sure exp doesn't go up once we are max level
-        if(level >= maxLevel)
-        {
-            currentExp = 0;
+            oneHanded.AddExp(1000);
         }
     }
 }

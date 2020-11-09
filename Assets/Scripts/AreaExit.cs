@@ -40,7 +40,6 @@ public class AreaExit : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            //SceneManager.LoadScene(areaToLoad);
             shouldLoadAfterFade = true;
             UIFade.instance.FadeToBlack();
 
