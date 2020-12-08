@@ -27,19 +27,9 @@ namespace Yarn.Unity
         {
 
             // Detect if we want to start a conversation
-            if (Input.GetKeyDown(KeyCode.Space) && FindObjectOfType<DialogueRunner>().IsDialogueRunning == false)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 CheckForNearbyNPC();
-            }
-
-            //make sure we can't move while dialog is happening
-            if (FindObjectOfType<DialogueRunner>().IsDialogueRunning == true)
-            {
-                PlayerController.instance.canMove = false;
-            }
-            else
-            {
-                PlayerController.instance.canMove = true;
             }
         }
 

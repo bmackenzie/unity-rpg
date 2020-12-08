@@ -12132,10 +12132,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5935829475857655956, guid: 4ec3df5875e7347beb6176b545b8fb39, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7644669280371853063, guid: 4ec3df5875e7347beb6176b545b8fb39, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -12688,6 +12684,50 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4334670559095282281, guid: 887d6f42dac65af4dbff8a620d346a9a, type: 3}
   m_PrefabInstance: {fileID: 1323705733}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1027510181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027510180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04317fce65da54f4997a5c4465b4e93c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 0}
+  textSpeed: 0.025
+  optionButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  onDialogueStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onLineStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onLineFinishDisplaying:
+    m_PersistentCalls:
+      m_Calls: []
+  onLineUpdate:
+    m_PersistentCalls:
+      m_Calls: []
+  onLineEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onOptionsStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onOptionsEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onCommand:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1027510182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13267,7 +13307,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7152930139536384079, guid: b4febfd135394b148a677758e2d2cac2, type: 3}
+  m_Sprite: {fileID: 172573758367929026, guid: c5041838aaafcab419802e4b4337ae42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13309,7 +13349,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9375, y: 1.375}
+    oldSize: {x: 0.9375, y: 1.6875}
     newSize: {x: 0.9375, y: 1.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -13350,7 +13390,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9375, y: 1.375}
+    oldSize: {x: 0.9375, y: 1.6875}
     newSize: {x: 0.9375, y: 1.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -16940,7 +16980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7344384888035784286, guid: fff36ad2aef7e6c499078b18e80b8f91, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff36ad2aef7e6c499078b18e80b8f91, type: 3}

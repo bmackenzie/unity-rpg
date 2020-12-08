@@ -24,7 +24,7 @@ public class PlayerController : Entity
 
     Vector2 lastMove;
 
-
+    GameObject dialogueRunner;
 
 
     // Start is called before the first frame update
@@ -98,5 +98,6 @@ public class PlayerController : Entity
 
         //stop the player from leaving the map, function from entity.cs
         setClamp(.5f, 1f);
+
     }
 }

@@ -413,6 +413,7 @@ namespace Yarn.Unity {
             if (dialogueContainer != null)
                 dialogueContainer.SetActive(true);
 
+
             onDialogueStart?.Invoke();            
         }
 
@@ -425,6 +426,7 @@ namespace Yarn.Unity {
             // Hide the dialogue interface.
             if (dialogueContainer != null)
                 dialogueContainer.SetActive(false);
+
             
         }
 
