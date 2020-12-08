@@ -256,6 +256,8 @@ namespace Yarn.Unity
 
                 Dialogue.SetNode(startNode);
 
+                //Unity.PlayerController.instance.canMove = false;
+
                 ContinueDialogue();
             }
         }

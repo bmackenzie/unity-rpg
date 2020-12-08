@@ -10,6 +10,9 @@ namespace Yarn.Unity
 
         public float interactionRadius = 2.0f;
 
+        //contains whether or not dialogue is being run
+        bool isActive = false;
+
         /// Draw the range at which we'll start talking to people.
         void OnDrawGizmosSelected()
         {
@@ -31,6 +34,10 @@ namespace Yarn.Unity
             {
                 CheckForNearbyNPC();
             }
+
+            //checks if there is active dialogue, stops player from moving if there is
+            isActive = !(FindObjectOfType<DialogueRunner>().IsDialogueRunning);
+            PlayerController.instance.canMove = isActive;
         }
 
         /// Find all DialogueParticipants
