@@ -8,6 +8,11 @@ public class GameManager : MonoBehaviour
     //array of character stats that can be displayed
     public CharacterStats[] playerStats;
 
+
+    // Setting bools that will be used to stop player movement
+    public bool gameMenuOpen, dialogueActive, fadingBetweenAreas;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +23,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //check if any conditions are active that should stop the player from moving
+        if (gameMenuOpen || dialogueActive || fadingBetweenAreas)
+        {
+            PlayerController.instance.canMove = false;
+        }
+        else
+        {
+            PlayerController.instance.canMove = true;
+        }
     }
 }

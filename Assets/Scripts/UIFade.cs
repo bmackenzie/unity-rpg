@@ -31,8 +31,10 @@ public class UIFade : MonoBehaviour
     {
         if (shouldFadeToBlack)
         {
-            //fades from current image color to the same color, but at full alpha. time.deltatime ensures this happens at the smae rate regardless of FPS 
+            //fades from current image color to the same color, but at full alpha. time.deltatime ensures this happens at the same rate regardless of FPS 
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+            //prevent player movement during fade
+            GameManager.instance.fadingBetweenAreas = true;
             
             if (fadeScreen.color.a == 1f)
             {
@@ -46,6 +48,8 @@ public class UIFade : MonoBehaviour
             if (fadeScreen.color.a == 0f)
             {
                 shouldFadeFromBlack = false;
+                //allow player movement after fade
+                GameManager.instance.fadingBetweenAreas = false;
             }
         }
     }

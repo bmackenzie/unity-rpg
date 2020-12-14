@@ -27,6 +27,7 @@ public class EssentialsLoader : MonoBehaviour
         {
             Instantiate(gameMan);
         }
+
     }
 
     // Update is called once per frame

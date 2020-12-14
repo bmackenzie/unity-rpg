@@ -37,7 +37,7 @@ namespace Yarn.Unity
 
             //checks if there is active dialogue, stops player from moving if there is
             isActive = !(FindObjectOfType<DialogueRunner>().IsDialogueRunning);
-            PlayerController.instance.canMove = isActive;
+            GameManager.instance.dialogueActive = !isActive;
         }
 
         /// Find all DialogueParticipants
