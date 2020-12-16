@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //check if any conditions are active that should stop the player from moving
-        if (gameMenuOpen || dialogueActive || fadingBetweenAreas)
+        if (gameMenuOpen || fadingBetweenAreas)
         {
             PlayerController.instance.canMove = false;
         }
